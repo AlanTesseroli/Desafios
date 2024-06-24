@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+/* Reset básico para limpar estilos padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #66f2f9; /* Cor de fundo geral */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar verticalmente o conteúdo */
+}
+
+section {
+
+    background-color: #d1d1d1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Limitando a largura para uma boa leitura */
+    margin-bottom: 20px; /* Espaçamento entre as seções */
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"], input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.u-text {
+    text-decoration: underline; /* Estilo para texto sublinhado */
+}
